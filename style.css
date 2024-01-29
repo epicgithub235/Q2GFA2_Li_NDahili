@@ -1,0 +1,83 @@
+*{margin: 0}
+section{
+    width: 100vw;
+    height: 100vh;
+}
+#banner{
+    position: relative;
+    background: rgb(3, 3, 8);
+    z-index: 1;
+}
+#island{
+    background: url(animation/islands.gif);
+    width: 250px;
+    height: 250px;
+    transform: translate(36vw, 35vh);
+}
+#ice{
+    background: url(animation/ice.gif);
+    width: 150px;
+    height: 150px;
+    transform: translate(6vw, 23vh);
+    animation: icymotion 7s infinite;
+}
+#lava{
+    background: url(animation/lava.gif);
+    width: 140px;
+    height: 140px;
+    transform: translate(79vw, 62vh);
+    animation: lavamotion 7s infinite;
+}
+.hbodies{
+    position: absolute;
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+@keyframes icymotion{
+    0%{z-index: 3; transform: translate(6vw, 23vh);}
+    5%{z-index: 3; transform: translate(14vw, 21vh) scale(.95);}
+    10%{z-index: 3; transform: translate(24vw, 20.6vh) scale(.89);}
+    15%{z-index: 2; transform: translate(34vw, 19.7vh) scale(.8);}
+    20%{z-index: 2; transform: translate(41vw, 19,6vh) scale(.7);}
+    25%{z-index: 2; transform: translate(46vw, 22.5vh) scale(.76);}
+    30%{z-index: 2; transform: translate(50vw, 23.5vh) scale(.84);}
+    35%{z-index: 3; transform: translate(56vw, 26vh) scale(.89);}
+    40%{z-index: 3; transform: translate(66vw, 31vh) scale(.93);}
+    45%{z-index: 3; transform: translate(73vw, 43vh) scale(.97);}
+    50%{z-index: 3; transform: translate(79vw, 62vh) scale(1);}
+    55%{z-index: 3; transform: translate(80vw, 63vh) scale(1.1);}
+    60%{z-index: 3; transform: translate(74vw, 65vh) scale(1.13);}
+    65%{z-index: 3; transform: translate(59vw, 68vh) scale(1.15);}
+    70%{z-index: 3; transform: translate(46vw, 64vh) scale(1.19);}
+    75%{z-index: 3; transform: translate(38vw, 61vh) scale(1.22);}
+    80%{z-index: 3; transform: translate(32vw, 60.5vh) scale(1.25);}
+    85%{z-index: 3; transform: translate(28vw, 59vh) scale(1.28);}
+    90%{z-index: 3; transform: translate(24vw, 57.8vh) scale(1.21);}
+    95%{z-index: 3; transform: translate(13vw, 43vh) scale(1.16);}
+    100%{z-index: 3; transform: translate(6vw, 23vh) scale(1);}
+}
+@keyframes lavamotion{
+    0%{z-index: 3; transform: translate(79vw, 62vh) scale(1);}
+    5%{z-index: 3; transform: translate(80vw, 63vh) scale(1.1);}
+    10%{z-index: 3; transform: translate(74vw, 65vh) scale(1.13);}
+    15%{z-index: 3; transform: translate(59vw, 68vh) scale(1.15);}
+    20%{z-index: 3; transform: translate(46vw, 64vh) scale(1.19);}
+    25%{z-index: 3; transform: translate(38vw, 61vh) scale(1.22);}
+    30%{z-index: 3; transform: translate(32vw, 60.5vh) scale(1.25);}
+    35%{z-index: 3; transform: translate(28vw, 59vh) scale(1.28);}
+    40%{z-index: 3; transform: translate(24vw, 57.8vh) scale(1.21);}
+    45%{z-index: 3; transform: translate(13vw, 43vh) scale(1.16);}
+    50%{z-index: 3; transform: translate(6vw, 23vh) scale(1);}
+    55%{z-index: 3; transform: translate(6vw, 23vh);}
+    60%{z-index: 3; transform: translate(14vw, 21vh) scale(.95);}
+    65%{z-index: 3; transform: translate(24vw, 20.6vh) scale(.89);}
+    70%{z-index: 2; transform: translate(34vw, 19.7vh) scale(.8);}
+    75%{z-index: 2; transform: translate(41vw, 19,6vh) scale(.7);}
+    80%{z-index: 2; transform: translate(46vw, 22.5vh) scale(.76);}
+    85%{z-index: 2; transform: translate(50vw, 23.5vh) scale(.84);}
+    90%{z-index: 3; transform: translate(56vw, 26vh) scale(.89);}
+    95%{z-index: 3; transform: translate(66vw, 31vh) scale(.93);}
+    100%{z-index: 3; transform: translate(73vw, 43vh) scale(.97);}
+}
